@@ -46,6 +46,9 @@ class ArticlesController < ApplicationController
     redirect_to articles_path
   end
 
+  def help
+  end
+
   private
   def article_params
     params.require(:article).permit(:title, :text)
